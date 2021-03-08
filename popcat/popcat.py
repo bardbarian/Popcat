@@ -54,5 +54,5 @@ def main():
 
     clips = alternate_lists(closed_clips, open_clips)
     final_clip = concatenate(clips)
-    final_clip.write_videofile("test.mp4", audio="audio.mp3", fps=FPS)
+    final_clip.write_videofile(f"{NAME}.mp4", audio="audio.mp3", fps=FPS)
     os.remove("audio.mp3")
